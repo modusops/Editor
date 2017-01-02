@@ -1,70 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
 
-.application {
-	position: absolute;
-    border: 3px solid purple;
-    width: 100%;
-    height: 100%;
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-}
-
-.applicationNavBar {
-    position: relative;
-    left: 0px;
-    width: 100%;
-    height: 100px;
-    border: 1px solid green;
-}
-
-.workspaceWrapper {
-	position: relative;
-}
-
-.canvasToolBar {
-	position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100px;
-    height: 500px;
-    border: 1px solid red;
-    text-align: center;
-}
-
-.leftPanel {
-	position: absolute;
-    top: 0px;
-    left: 100px;
-    width: 300px;
-    height: 500px;
-    border: 1px solid red;
-    text-align: center;
-}
-
-.rightPanel {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 200px;
-    height: 500px;
-    border: 1px solid red;
-    text-align: center;
-}
-
-
-</style>
 </head>
-<body>
+<body class="bodybg">
 <div class="application">
-	<div class="applicationNavBar">Application Nav Bar Relative</div>
+		<div class="applicationNavBar"></div>
   	<div class="workspaceWrapper">
-  		<div class="rightPanel">Right Panel Absolute</div>
-  		<div class="canvasToolBar">Canvas Toolbar Relative</div>
-    	<div class="leftPanel">Left Panel Absolute</div>
-   	</div>
-   </div>
+  			<div class="rightPanel"></div>
+  			<div class="canvasToolBar"></div>
+    		<div class="leftPanel"></div>
+		</div>
 </div>
 
 </body>
