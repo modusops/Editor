@@ -7,11 +7,16 @@
 </head>
 <body class="bodybg">
 <div class="application">
-		<div class="applicationNavBar"></div>
+		<div class="applicationNavBar" title="application navigation bar"></div>
   	<div class="workspaceWrapper">
-  			<div class="rightPanel"></div>
-  			<div class="canvasToolBar"></div>
-    		<div class="leftPanel"></div>
+  			<div class="canvasToolBar" title="canvas tool bar"></div>
+			  <div class="leftPanel" title="left panel">
+					<div class="searchPanel">
+						<div class="searchPanelThumbnail" title="thumbnail"></div>
+					</div>
+				</div>
+  			<div class="rightPanel" title="application right panel"></div>
+
 		</div>
 </div>
 
