@@ -26,23 +26,73 @@
 }
 
 .workspaceWrapper {
-	position: relative;
-	height: 100%;
-	border: 0px solid green;
-	z-index: -1;
+		position: relative;
+		height: 100%;
+		border: 0px solid green;
+		z-index: -1;
 }
 
+
+/* ----- canvas tool bar ----- */
 .canvasToolBar {
-	position: absolute;
-    top: 0px;
+		position: absolute;
+    top: 70px;
     left: 0px;
     width: 55px;
     height: 100%;
 		background-color: #3E454F;
     border: 0px solid red;
     text-align: center;
+		display: block;
 }
 
+.canvasToolBarButton {
+		position: relative;
+    width: 55px;
+    height: 55px;
+		background-color: #1E2025;
+    border: 0px solid red;
+		display: inline-flex;
+		-webkit-box-align: center;
+		align-items: center;
+		border-bottom: 2px solid #171A1F;
+		cursor: pointer;
+		z-index: 900;
+		clear:both;
+		transition: all 0.2s ease-in-out;
+}
+
+.canvasToolBarButton:hover {
+		background-color: #43B9D3;
+		cursor: pointer;
+		z-index: 1000;
+
+}
+
+.canvasToolBarButton:active {
+		background-color: #000000;
+		cursor: pointer;
+		z-index: 1000;
+
+}
+
+/* ----- canvas tool bar thumbnail icons ----- */
+.canvasToolBarButtonIcon {
+	fill: grey;
+	padding:14px;
+	width: 22px;
+	height: 22px;
+}
+.canvasToolBarButtonIcon:hover {
+	fill: #FFFFFF;
+	cursor: pointer;
+}
+
+
+
+
+
+/* ----- panels ----- */
 .leftPanel {
 		position: absolute;
     top: 0px;
@@ -64,6 +114,7 @@
 		height: 100%;
 		border: 0px solid green;
 }
+
 
 /*
 .searchPanelThumbnail {
