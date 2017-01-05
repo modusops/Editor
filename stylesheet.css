@@ -9,10 +9,8 @@
 		background-color: #16191E;
     width: 100%;
     height: 100%;
-		z-index: -2;
 		padding: 0px;
 		margin: 0px;
-
 }
 
 .applicationNavBar {
@@ -29,7 +27,6 @@
 		position: relative;
 		height: 100%;
 		border: 0px solid green;
-		z-index: -1;
 }
 
 
@@ -57,23 +54,27 @@
 		align-items: center;
 		border-bottom: 2px solid #171A1F;
 		cursor: pointer;
-		z-index: 900;
-		clear:both;
-		transition: all 0.2s ease-in-out;
+}
+
+.canvasToolBarButton, .canvasToolBarButtonIcon {
+	transition: all 0.2s ease-in-out;
 }
 
 .canvasToolBarButton:hover {
 		background-color: #43B9D3;
 		cursor: pointer;
 		z-index: 1000;
+}
 
+.canvasToolBarButton:hover .canvasToolBarButtonIcon {
+	fill: #FFFFFF;
+	cursor: pointer;
 }
 
 .canvasToolBarButton:active {
 		background-color: #000000;
 		cursor: pointer;
 		z-index: 1000;
-
 }
 
 /* ----- canvas tool bar thumbnail icons ----- */
@@ -82,10 +83,6 @@
 	padding:14px;
 	width: 22px;
 	height: 22px;
-}
-.canvasToolBarButtonIcon:hover {
-	fill: #FFFFFF;
-	cursor: pointer;
 }
 
 
@@ -126,16 +123,13 @@
 		border: 1px solid black;
 		transform: scale(1,1);
 		box-shadow: 1px 1px 25px rgba(0, 0, 0, 1);
-
 		/* standard syntax
 		transition-property: transform, border, box-shadow;
 		transition-duration: 0.2s;
 		transition-timing-function: ease-in-out;
 		transition-delay: initial;
-
 	/* shorthand syntax
 	transition: all .2s ease-in-out;
-
 }
 */
 
